@@ -41,7 +41,7 @@ const Video = () => {
         e.preventDefault();
 
         console.log('Se ha comentado');
-        setComments(  [...comments, { usuario: user, comment: `${newComment.comment}` }])
+        setComments(  [...comments, { usuario: user, comment: newComment.comment }])
     }
 
 

@@ -1,10 +1,13 @@
 import React from 'react';
-// import '../Input/Input.scss';
+import '../Input/Input.scss';
 
 
 const Input = ( { value, title, on, id, type, name, autoComplete, error, errorMessage, required } ) => (
 
-    <div className="input-field">
+    <div className="input__content">
+        <label>
+            {title}
+        </label>
         <input id={id} 
             type={type}
             name={name}
@@ -21,9 +24,6 @@ const Input = ( { value, title, on, id, type, name, autoComplete, error, errorMe
             }
             required={ required ? true : false }
         />
-        <label>
-            {title}
-        </label>
         { error ?
             <span className="error-message" >
                 {errorMessage}

@@ -50,27 +50,41 @@ const Login = () => {
     }
 
     return(
-        <>
-            <form onSubmit={(e) => handleSubmit(e)} >
-                <Input 
-                    title="Correo"
-                    type="email" 
-                    name="email"
-                    value={dataLogin.email}
-                    id="email"
-                    on={handleInputChange}
-                />
-                <Input 
-                    title="Contraseña"
-                    type="password" 
-                    name="password" 
-                    id="password"
-                    value={dataLogin.password}
-                    on={handleInputChange}
-                />
-                <Button btn type="submit" title="Enviar" />
-            </form>
-        </>
+    
+        <div className="login">
+            <div className="login__content">
+                <div className="login__head">
+                    <span className="logo">
+                        <i class="material-icons">play_arrow</i>
+                        <h1>
+                            Academo
+                        </h1>
+                    </span>
+                </div>
+                <div className="login__form">
+                    <form onSubmit={(e) => handleSubmit(e)} >
+                        <Input 
+                            title="Correo"
+                            type="email" 
+                            name="email"
+                            value={dataLogin.email}
+                            id="email"
+                            on={handleInputChange}
+                        />
+                        <Input 
+                            title="Contraseña"
+                            type="password" 
+                            name="password" 
+                            id="password"
+                            value={dataLogin.password}
+                            on={handleInputChange}
+                        />
+                        <Button btn clase="center" type="submit" iconL="send" title="Enviar" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        
     ); 
 }
 

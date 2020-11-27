@@ -1,0 +1,62 @@
+@import '../../src/styles/vars.scss';
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: $yellow2;
+}
+
+.login__content{
+    background-color: $white-blur;
+    padding: 1.5em;
+    width: 450px;
+    height: auto;
+    border-radius: 1em;
+    border: solid 1px $white-blur;
+    transition: 1s;
+    backdrop-filter: blur(2px);
+    &:hover{
+        border: solid 1px $primary;
+        box-shadow: 0 0 20px rgba(0,0,0, 0.10);
+        transition: 1s;
+    }
+}
+
+.login__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form{
+        width: 100%;
+    }
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    i{
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary;
+        padding: 0.2em;
+        margin-right: 0.3em;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        color: $dark;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 3px 3px rgba(0,0,0, 0.10);  
+            transition: 0.3s;
+        }
+    }
+}

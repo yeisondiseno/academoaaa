@@ -1,10 +1,10 @@
 import React from 'react';
-// import '../Input/Input.scss';
+import '../Input/Input.scss';
 
 
 const InputTextArea = ( { value, title, on, id, type, name, autoComplete, error, errorMessage, required } ) => (
 
-    <div className="input-field">
+    <div className="input__content">
         <textarea id={id} 
             type={type}
             name={name}
