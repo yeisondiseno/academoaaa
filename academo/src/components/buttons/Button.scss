@@ -1,0 +1,37 @@
+@import '../../assets/styles/Vars.scss'; 
+
+
+// comandos extras 
+.btn-fwidth{
+    width: 100%;
+}
+
+.btn.blank{
+    background-color: $white;
+    color: $coffee1;
+    border: solid 1px $white;
+    box-shadow: none;
+}
+
+.btn:hover.blank{
+    background-color: $white;
+    color: $coffee1;
+    border: solid 1px $coffee2;
+    box-shadow: $shadowcoffee;
+}
+
+// iconos
+.icon-l{
+    margin-right: 0.8em;
+}
+.icon-r{
+    margin-left: 0.8em;
+}
+
+
+// responsive 
+@media only screen and ( max-width: $sm-point ) {
+    .btn-fullw-mobile{
+        width: 100%;
+    }
+}
